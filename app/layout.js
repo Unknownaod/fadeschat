@@ -1,5 +1,4 @@
 import "./globals.css";
-import "./site.css";
 
 export const metadata = {
   title: { default: "Fades Chat", template: "%s · Fades Chat" },

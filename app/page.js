@@ -2,10 +2,10 @@ import Link from "next/link";
 import { SiteNav, SiteFooter } from "../components/Site";
 
 const FEATURES = [
-  ["💬", "Direct messages", "Search for anyone on Fades by name or username and start talking in a couple of taps."],
+  ["⧉", "A tab for every conversation", "Open chats sit in a tab strip, just like a browser. Switch between people without losing your place."],
+  ["⌕", "Search everything with ⌘K", "Find a conversation or anyone on Fades from one search bar, then start talking."],
   ["👥", "Group chats", "Name a group, pick the people, and keep everyone in one conversation."],
-  ["✏️", "Edit and delete", "Fix a typo or take a message back. Edits are marked so nothing is hidden."],
-  ["✓✓", "Read receipts", "See when your message has been read, right under the message."],
+  ["✓✓", "Live and in sync", "New messages arrive automatically, with read receipts, edits and deletes shown as they happen."],
 ];
 
 const STEPS = [
@@ -42,17 +42,20 @@ export default function Landing() {
           </div>
 
           <div className="mock" aria-hidden="true">
-            <div className="mock-head">
-              <div className="avatar small">AL</div>
-              <div><strong>Ada Lovelace</strong><span>Fades Chat</span></div>
+            <div className="mock-tabs">
+              <span className="mock-dot" />
+              <div className="mock-tab on"><i>AL</i>Ada Lovelace</div>
+              <div className="mock-tab"><i style={{ background: "linear-gradient(145deg,#0f9d8a,#2f6fd6)" }}>PL</i>Project Lab</div>
+              <div className="mock-tab"><i style={{ background: "linear-gradient(145deg,#d6568f,#8a4fd6)" }}>GH</i>Grace H.</div>
             </div>
+            <div className="mock-bar"><span>☰</span><div>⌕ &nbsp;Search people and conversations</div></div>
             <div className="mock-body">
               <div className="mock-msg other">Are we still on for Thursday?</div>
               <div className="mock-msg own">Yes! Booked the room for 3pm.</div>
               <div className="mock-msg other">Perfect. I'll bring the slides.</div>
               <div className="mock-msg own">Great. Adding Grace to the group now.<em>✓✓ Read</em></div>
             </div>
-            <div className="mock-input"><span>Message Ada…</span><i>↑</i></div>
+            <div className="mock-input"><span>Message Ada Lovelace</span><i>↑</i></div>
           </div>
         </section>
 
